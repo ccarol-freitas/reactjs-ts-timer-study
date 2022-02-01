@@ -2,8 +2,8 @@ import Button from "../Button";
 
 const Form = (): any => {
   return (
-    <form>
-      <div>
+    <form className="new_task">
+      <div className="input_container">
         <label htmlFor="task">Adicionar estudo</label>
         <input
           name="task"
@@ -13,7 +13,7 @@ const Form = (): any => {
           required
         />
       </div>
-      <div>
+      <div className="input_container">
         <label htmlFor="time">Tempo de estudo</label>
         <input
           name="time"

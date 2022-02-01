@@ -1,7 +1,7 @@
 const Button = (): any => {
   return (
     <div>
-      <button>Adicionar</button>
+      <button className="add_task">Adicionar</button>
     </div>
   );
 };

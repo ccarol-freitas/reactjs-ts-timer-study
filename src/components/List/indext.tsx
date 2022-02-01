@@ -22,11 +22,11 @@ const List = (): any => {
     },
   ];
   return (
-    <aside>
+    <aside className="task_list">
       <h2>Estudos do dia</h2>
       <ul>
         {tasks.map((task, index) => (
-          <li key={index}>
+          <li key={index} className="task_item">
             <h3>{task.name}</h3>
             <span>{task.time}</span>
           </li>
