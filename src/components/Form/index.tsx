@@ -26,7 +26,7 @@ const Form = (): any => {
         />
       </div>
       <div>
-        <Button />
+        <Button text="Adicionar" />
       </div>
     </form>
   );

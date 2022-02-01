@@ -1,3 +1,5 @@
+import Task from "./Task";
+
 const List = (): any => {
   const tasks = [
     {
@@ -26,10 +28,7 @@ const List = (): any => {
       <h2>Estudos do dia</h2>
       <ul>
         {tasks.map((task, index) => (
-          <li key={index} className="task_item">
-            <h3>{task.name}</h3>
-            <span>{task.time}</span>
-          </li>
+          <Task key={index} {...task} />
         ))}
       </ul>
     </aside>

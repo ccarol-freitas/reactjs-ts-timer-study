@@ -1,7 +1,10 @@
-const Button = (): any => {
+type Props = {
+  text: string;
+};
+const Button = (props: Props): any => {
   return (
     <div>
-      <button className="add_task">Adicionar</button>
+      <button className="add_task">{props.text}</button>
     </div>
   );
 };
