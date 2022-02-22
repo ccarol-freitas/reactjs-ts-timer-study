@@ -1,11 +1,15 @@
 type Props = {
   text: string;
+  type?: "button" | "submit" | "reset" | undefined;
 };
 const Button = (props: Props): any => {
+  const { type = "button" } = props;
   return (
-    <div>
-      <button className="add_task">{props.text}</button>
-    </div>
+    <>
+      <button type={props.type} className='add_task'>
+        {props.text}
+      </button>
+    </>
   );
 };
 
