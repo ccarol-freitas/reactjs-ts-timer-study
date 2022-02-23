@@ -1,11 +1,13 @@
+import style from "./Time.module.scss";
+
 const Clock = (): any => {
   return (
     <>
-      <span>0</span>
-      <span>0</span>
-      <span>:</span>
-      <span>0</span>
-      <span>0</span>
+      <span className={style.Title}>0</span>
+      <span className={style.Title}>0</span>
+      <span className={style.Title}>:</span>
+      <span className={style.Title}>0</span>
+      <span className={style.Title}>0</span>
     </>
   );
 };

@@ -8,8 +8,8 @@ import style from "./App.module.scss";
 const App = (): any => {
   const [tasks, setTasks] = useState<ITask[] | []>([]);
   return (
-    <div className={style.AppStyle}>
-      <Form setTasks={setTasks} />
+    <div className={style.Container}>
+      <Form />
       <List tasks={tasks} />
       <Stopwatch />
     </div>

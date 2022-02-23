@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ITask } from "../../types/tasks";
 import Button from "../Button";
+import style from "./Form.module.scss";
 
 const Form = (): any => {
   const [task, setTask] = useState({
@@ -14,10 +15,13 @@ const Form = (): any => {
   };
 
   return (
-    <form className='new_task' onSubmit={handleSubmit.bind(task)}>
-      <div className='input_container'>
-        <label htmlFor='task'>Adicionar estudo</label>
+    <form className={style.Form} onSubmit={handleSubmit.bind(task)}>
+      <div className={style.Content}>
+        <label className={style.Label} htmlFor='task'>
+          Adicionar estudo
+        </label>
         <input
+          className={style.Input}
           name='task'
           id='task'
           type='text'
@@ -28,9 +32,12 @@ const Form = (): any => {
           }}
         />
       </div>
-      <div className='input_container'>
-        <label htmlFor='time'>Tempo de estudo</label>
+      <div className={style.Content}>
+        <label className={style.Label} htmlFor='time'>
+          Tempo de estudo
+        </label>
         <input
+          className={style.Input}
           name='time'
           id='time'
           step='1'
