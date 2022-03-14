@@ -52,7 +52,7 @@ const Form = (): any => {
         />
       </div>
       <div>
-        <Button type='submit' text='Adicionar' />
+        <Button type='submit' text='Adicionar estudo' />
       </div>
     </form>
   );
