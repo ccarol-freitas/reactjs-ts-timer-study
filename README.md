@@ -1,9 +1,10 @@
 # reactjs-ts-timer-study
 <p>Timer criado em React.js e Typescript, com o objetivo adicionar tempos de estudo </p>
 
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
-
+<div>
+	<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+	<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+</div>
 
 <h4 align="center"> 
 	🚧  React Timer 🚀 Em construção...  🚧
