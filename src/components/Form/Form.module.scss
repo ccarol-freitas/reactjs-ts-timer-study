@@ -1,0 +1,33 @@
+.Form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 680px;
+  height: 278px;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+}
+
+.Input {
+  width: 606px;
+  height: 62px;
+  border: 1px solid #4d3147;
+  border-radius: 8px;
+  outline: none;
+}
+
+.Label {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
+  color: #4d3147;
+  margin: 10px 0;
+}

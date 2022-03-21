@@ -1,0 +1,28 @@
+.ContentStopWatch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 665px;
+  height: 233px;
+  background: #4d3147;
+  border-radius: 21px;
+}
+
+.Text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  color: #4d3147;
+}
+
+.Border {
+  width: 665px;
+  height: 1px;
+  background-color: #866a80;
+  margin-bottom: 16px;
+  margin-top: 10px;
+}
