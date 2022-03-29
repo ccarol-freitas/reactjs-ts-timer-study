@@ -14,8 +14,8 @@
 ### Features
 
 - [x] Seguir o design https://www.figma.com/file/l02ImWKkzRy7pPzosrv6Td/Timer-Study?node-id=0%3A1
-- [ ] Criar modal
-- [X] Criar botão geenérico
+- [ ] Criar tarefa na tela principal
+- [X] Criar botão genérico
 
 
 ### Pré-requisitos
