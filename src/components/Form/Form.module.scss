@@ -1,33 +1,53 @@
 .Form {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  max-width: 680px;
-  height: 278px;
+
+  .Container {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+  }
 }
 
 .Content {
   display: flex;
   flex-direction: column;
+  border: 1px solid #4d3147;
+  border-radius: 8px;
+  padding: 8px;
+  background: #ffff;
+  width: 490px;
 }
 
 .Input {
-  width: 606px;
-  height: 62px;
-  border: 1px solid #4d3147;
-  border-radius: 8px;
+  width: 490px;
   outline: none;
+  border: none;
+  color: #474646;
+
+  ::placeholder {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #474646;
+  }
 }
 
-.Label {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: left;
-  color: #4d3147;
-  margin: 10px 0;
+.BtnCircle {
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  background-color: #fff;
+  border: #4d3147;
+  font-size: 41px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }

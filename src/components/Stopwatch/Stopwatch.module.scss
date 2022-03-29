@@ -19,10 +19,24 @@
   color: #4d3147;
 }
 
-.Border {
-  width: 665px;
-  height: 1px;
-  background-color: #866a80;
-  margin-bottom: 16px;
-  margin-top: 10px;
+.BtnSquare {
+  width: 206px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fffbff;
+  border: 1px solid #4d3147;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4d3147;
 }

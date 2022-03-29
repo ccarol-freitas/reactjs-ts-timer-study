@@ -3,12 +3,31 @@
   width: 100%;
   height: 100vh;
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
+.ContentBtn {
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+
+.Content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  aside {
+    border-bottom: 1px solid #866a80;
+    width: 637px;
+    padding: 10px 0;
+  }
+}
+
 .H4 {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;

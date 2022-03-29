@@ -5,13 +5,11 @@ import style from "./Stopwatch.module.scss";
 const Stopwatch = (): any => {
   return (
     <div>
-      <p className={style.Text}>Escolha um card e inicie os estudos :)</p>
-      <div className={style.Border}></div>
       <div className={style.ContentStopWatch}>
         <div>
           <Clock />
         </div>
-        <Button text='Começar!' />
+        <Button text='Começar!' className={style.BtnSquare} />
       </div>
     </div>
   );
