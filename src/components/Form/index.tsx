@@ -3,23 +3,21 @@ import { ITask } from "../../types/tasks";
 import Button from "../Button";
 import style from "./Form.module.scss";
 
-const Form = (
-  setTasks: React.Dispatch<
-    React.SetStateAction<
-      {
-        name: string;
-        time: string;
-      }[]
-    >
-  >
-) => {
+const Form = () => {
+  const [name, setName] = useState("");
+  const [time, setTime] = useState("");
+  cosnt[(tasks, setTasks)] = useState([]);
+
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
-    setTasks((tasks: any) => [...tasks, { ...setTasks }]);
+    if (name && time) {
+      setTasks({tasks.name, tasks.time})
+      console.log(name, time);
+    }
   };
 
   return (
-    <form className={style.Form} onSubmit={handleSubmit.bind(task)}>
+    <form className={style.Form} onSubmit={handleSubmit}>
       <div className={style.Container}>
         <div className={style.Content}>
           <input
@@ -30,7 +28,7 @@ const Form = (
             placeholder='O que gostaria de estudar hoje?'
             required
             onChange={(e) => {
-              setTasks({ ...task, name: e.target.value });
+              setName(e.target.value);
             }}
           />
 
@@ -40,13 +38,12 @@ const Form = (
             id='time'
             step='1'
             type='time'
-            value={task.time}
             min='00:00:00'
             max='01:30:00'
             placeholder='Tempo de estudo'
             required
             onChange={(e) => {
-              setTasks({ ...task, time: e.target.value });
+              setTime(e.target.value);
             }}
           />
         </div>

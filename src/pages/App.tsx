@@ -7,10 +7,13 @@ import style from "./App.module.scss";
 const App = (): any => {
   const [tasks, setTasks] = useState([]);
 
+  const handleSubmit = (newTask) => {
+    setTasks([...tasks, newTask]);
+  };
   return (
     <>
       <div className={style.Container}>
-        <Form setTasks={setTasks} />
+        <Form onAddTask={handleSubmit} />
         <div className={style.Content}>
           <aside>
             <h4 className={style.H4}>Escolha um card e inicie os estudos :)</h4>
