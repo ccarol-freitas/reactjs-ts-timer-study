@@ -41,20 +41,22 @@
 }
 
 .flag {
-  height: 24px;
+  height: 15px;
+  width: 130px;
   background: #0daed1;
   border-radius: 5px;
   cursor: auto;
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.textFlag {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 17px;
   color: #e6e0e0;
-  text-align: center;
-
-  padding: 2px;
-
-  display: flex;
-  align-items: center;
 }

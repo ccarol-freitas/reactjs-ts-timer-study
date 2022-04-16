@@ -12,6 +12,8 @@ const Clock = ({ time = 0 }: Props): any => {
 
   return (
     <>
+      <span className={style.titleTime}>00</span>
+      <span className={style.titleTime}>:</span>
       <span className={style.titleTime}>{minute}</span>
       <span className={style.titleTime}>:</span>
       <span className={style.titleTime}>{second}</span>
