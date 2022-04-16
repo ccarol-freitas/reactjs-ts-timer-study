@@ -44,3 +44,7 @@ $ npm start
 # A aplicação inciará na porta:3000 - acesse <http://localhost:3000/> ou na que estiver disponivel em seu computador
 $ localhost:3000
 ```
+### Prévia do Projeto
+![image](https://user-images.githubusercontent.com/54582414/163694179-870e8623-0651-4810-977b-f4963b9d3ae2.png)
+
+
