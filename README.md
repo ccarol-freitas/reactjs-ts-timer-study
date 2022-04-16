@@ -16,7 +16,7 @@
 - [x] Seguir o design https://www.figma.com/file/l02ImWKkzRy7pPzosrv6Td/Timer-Study?node-id=0%3A1
 - [x] Criar tarefa na tela principal
 - [X] Criar botão genérico
-- [ ] Ao clicar em começar ele deve iniciar o timer 
+- [X] Ao clicar em começar ele deve iniciar o timer 
 
 
 ### Pré-requisitos
