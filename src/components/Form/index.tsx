@@ -51,7 +51,7 @@ const Form = ({ setTasks }: Props) => {
             step='1'
             type='time'
             min='00:00:00'
-            max='00:90:00'
+            max='01:30:00'
             placeholder='Tempo de estudo'
             required
             value={time}
