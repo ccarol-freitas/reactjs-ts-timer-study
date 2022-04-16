@@ -1,10 +1,34 @@
+import { ITask } from "../../../types/tasks";
 import style from "./Task.module.scss";
 
-const Task = ({ name, time }: { name: string; time: string }): any => {
+interface Props extends ITask {
+  selectTask: (selectedTask: ITask) => void;
+}
+
+const Task = ({ id, name, time, finish, selected, selectTask }: Props): any => {
   return (
-    <li className={style.Card}>
-      <h3 className={style.Title}>{name}</h3>
-      <span className={style.Text}>{time}</span>
+    <li
+      className={`${style.card} 
+        ${selected ? style.taskSelected : ""} 
+        ${finish ? style.taskSelected : ""}
+      `}
+      onClick={() =>
+        !finish &&
+        selectTask({
+          name,
+          time,
+          selected,
+          finish,
+          id,
+        })
+      }
+    >
+      <div className={style.taskFlag}>
+        <h3>{name}</h3>
+        {finish && <p className={style.flag}>TAREFA CONCLUIDA</p>}
+      </div>
+
+      <p>{time}</p>
     </li>
   );
 };

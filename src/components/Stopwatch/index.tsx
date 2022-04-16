@@ -1,17 +1,45 @@
+import { useEffect, useState } from "react";
+import { ITask } from "../../types/tasks";
+import timeToSeconds from "../../utils";
 import Button from "../Button";
 import Clock from "./Clock";
 import style from "./Stopwatch.module.scss";
 
-const Stopwatch = (): any => {
+interface Props {
+  selected: ITask | undefined;
+  finishTask: () => void;
+}
+
+const Stopwatch = ({ selected, finishTask }: Props): any => {
+  const [time, setTime] = useState<number>();
+
+  useEffect(() => {
+    if (selected?.time) {
+      setTime(timeToSeconds(selected.time));
+    }
+  }, [selected]);
+
+  const regress = (count: number = 0) => {
+    setTimeout(() => {
+      if (count > 0) {
+        setTime(count - 1);
+        return regress(count - 1);
+      }
+      finishTask();
+    }, 1000);
+  };
+
   return (
     <div>
-      <p className={style.Text}>Escolha um card e inicie os estudos :)</p>
-      <div className={style.Border}></div>
-      <div className={style.ContentStopWatch}>
+      <div className={style.contentStopWatch}>
         <div>
-          <Clock />
+          <Clock time={time} />
         </div>
-        <Button text='Começar!' />
+        <Button
+          text='Começar!'
+          className={style.btnSquare}
+          onClick={() => regress(time)}
+        />
       </div>
     </div>
   );

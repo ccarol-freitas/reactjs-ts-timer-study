@@ -1,33 +1,80 @@
-.Form {
+.form {
+  display: flex;
+  width: 674px;
+  align-items: center;
+  justify-content: space-around;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #4d3147;
+  border-radius: 8px;
+  padding: 8px;
+  background: #ffff;
+  width: 531px;
+  height: 65px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.field {
+  width: 531px;
+  outline: none;
+  border: none;
+  color: #474646;
+
+  ::placeholder {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #474646;
+  }
+}
+
+input[type="time"] {
+  border: none;
+  color: #2a2c2d;
+  font-size: 14px;
+  font-family: helvetica;
+  width: 200px;
+}
+
+input[type="time"]::-webkit-datetime-edit-fields-wrapper {
+  display: flex;
+}
+
+input[type="time"]::-webkit-datetime-edit-text {
+  padding: 19px 4px;
+}
+
+input[type="time"]::-webkit-datetime-edit-minute-field,
+input[type="time"]::-webkit-datetime-edit-hour-field,
+input[type="time"]::-webkit-datetime-edit-second-field {
+  background-color: #e5e5e5;
+  color: #474646;
+  border-radius: 15%;
+  padding: 19px 13px;
+}
+
+.btnCircle {
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  background-color: #fff;
+  border: #4d3147;
+  font-size: 64px;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  max-width: 680px;
-  height: 278px;
-}
-
-.Content {
-  display: flex;
-  flex-direction: column;
-}
-
-.Input {
-  width: 606px;
-  height: 62px;
-  border: 1px solid #4d3147;
-  border-radius: 8px;
-  outline: none;
-}
-
-.Label {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: left;
-  color: #4d3147;
-  margin: 10px 0;
+  cursor: pointer;
 }

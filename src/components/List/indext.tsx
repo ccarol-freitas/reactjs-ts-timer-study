@@ -1,15 +1,19 @@
 import { ITask } from "../../types/tasks";
 import Task from "./Task";
+import style from "./List.module.scss";
 
-const List = ({ tasks }: { tasks: ITask[] }): any => {
+interface Props {
+  tasks: ITask[];
+  selectTask: (selectedTask: ITask) => void;
+}
+
+const List = ({ tasks, selectTask }: Props): any => {
   return (
-    <aside className='task_list'>
-      <ul>
-        {tasks.map((task, index) => (
-          <Task key={index} {...task} />
-        ))}
-      </ul>
-    </aside>
+    <ul className={style.list}>
+      {tasks.map((task) => (
+        <Task key={task.id} {...task} selectTask={selectTask} />
+      ))}
+    </ul>
   );
 };
 
