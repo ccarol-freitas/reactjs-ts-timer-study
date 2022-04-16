@@ -1,28 +1,30 @@
-.Form {
+.form {
   display: flex;
-  width: 100%;
+  width: 674px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
-  .Container {
+  .container {
     display: flex;
     justify-content: space-between;
-    width: 35%;
   }
 }
 
-.Content {
+.content {
   display: flex;
   flex-direction: column;
   border: 1px solid #4d3147;
   border-radius: 8px;
   padding: 8px;
   background: #ffff;
-  width: 490px;
+  width: 531px;
+  height: 65px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.Input {
-  width: 490px;
+.field {
+  width: 531px;
   outline: none;
   border: none;
   color: #474646;
@@ -38,13 +40,38 @@
   }
 }
 
-.BtnCircle {
+input[type="time"] {
+  border: none;
+  color: #2a2c2d;
+  font-size: 14px;
+  font-family: helvetica;
+  width: 200px;
+}
+
+input[type="time"]::-webkit-datetime-edit-fields-wrapper {
+  display: flex;
+}
+
+input[type="time"]::-webkit-datetime-edit-text {
+  padding: 19px 4px;
+}
+
+input[type="time"]::-webkit-datetime-edit-minute-field,
+input[type="time"]::-webkit-datetime-edit-hour-field,
+input[type="time"]::-webkit-datetime-edit-second-field {
+  background-color: #e5e5e5;
+  color: #474646;
+  border-radius: 15%;
+  padding: 19px 13px;
+}
+
+.btnCircle {
   border-radius: 50%;
   height: 65px;
   width: 65px;
   background-color: #fff;
   border: #4d3147;
-  font-size: 41px;
+  font-size: 64px;
   font-weight: bold;
   display: flex;
   align-items: center;

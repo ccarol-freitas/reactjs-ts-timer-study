@@ -1,4 +1,19 @@
-.List {
-  width: 658px;
-  height: 463px;
+.list {
+  height: 270px;
+  width: 100%;
+  margin-top: 20px;
+  overflow-y: scroll;
+}
+
+.list::-webkit-scrollbar {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.list::-webkit-scrollbar-thumb {
+  width: 5px;
+  height: 5px;
+  background: #c9b7c7;
+  border-radius: 8px;
 }

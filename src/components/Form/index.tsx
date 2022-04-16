@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ITask } from "../../types/tasks";
 import Button from "../Button";
 import style from "./Form.module.scss";
+import { v4 as uid } from "uuid";
 
 interface Props {
   setTasks: React.Dispatch<React.SetStateAction<ITask[]>>;
@@ -15,20 +16,23 @@ const Form = ({ setTasks }: Props) => {
     setTasks((oldTasks) => [
       ...oldTasks,
       {
+        id: uid(),
         name,
         time,
+        selected: false,
+        finish: false,
       },
     ]);
     setName("");
-    setTime("00:00:00");
+    setTime("00:01:00");
   };
 
   return (
-    <form className={style.Form} onSubmit={handleSubmit}>
-      <div className={style.Container}>
-        <div className={style.Content}>
+    <form className={style.form} onSubmit={handleSubmit}>
+      <div className={style.container}>
+        <div className={style.content}>
           <input
-            className={style.Input}
+            className={style.field}
             name='task'
             id='task'
             type='text'
@@ -41,13 +45,13 @@ const Form = ({ setTasks }: Props) => {
           />
 
           <input
-            className={style.Input}
+            className={style.field}
             name='time'
             id='time'
             step='1'
             type='time'
             min='00:00:00'
-            max='01:30:00'
+            max='00:90:00'
             placeholder='Tempo de estudo'
             required
             value={time}
@@ -56,9 +60,10 @@ const Form = ({ setTasks }: Props) => {
             }}
           />
         </div>
-        <div>
-          <Button type='submit' text='+' className={style.BtnCircle} />
-        </div>
+      </div>
+
+      <div>
+        <Button type='submit' text='+' className={style.btnCircle} />
       </div>
     </form>
   );

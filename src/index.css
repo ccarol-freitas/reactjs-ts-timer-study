@@ -123,7 +123,7 @@ table {
 }
 
 input {
-  font-family: inherit;
+  font-family: "Montserrat", sans-serif;
   font-size: inherit;
   font-weight: inherit;
   color: inherit;
@@ -132,42 +132,14 @@ input {
 button {
   border: unset;
   background-color: unset;
-  font-family: inherit;
+  font-family: "Montserrat", sans-serif;
   font-size: inherit;
   font-weight: inherit;
   color: inherit;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Manjari&display=swap");
-
-body {
-  display: flex;
-  justify-content: center;
-  font-family: "Manjari", sans-serif;
-
-  background-color: #e5e5e5;
-  height: 100%;
-  width: 100%;
-  padding: 16px;
-  box-sizing: border-box;
-}
-
-#root {
-  width: 100%;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: unset;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #e5e5e5;
+input[type="time"]::-webkit-datetime-edit-ampm-field,
+input[type="time"]::-webkit-clear-button,
+input[type="time"]::-webkit-inner-spin-button {
+  display: none;
 }

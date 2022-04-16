@@ -1,19 +1,19 @@
-.Container {
+.container {
   background-color: #4d3147;
-  width: 100%;
-  height: 100vh;
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
 }
 
-.ContentBtn {
+.contentBtn {
   display: flex;
   justify-content: end;
   padding: 20px;
 }
 
-.Content {
+.content {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -21,13 +21,13 @@
 
   aside {
     border-bottom: 1px solid #866a80;
-    width: 637px;
+    width: 674px;
     padding: 10px 0;
   }
 }
 
-.H4 {
-  font-family: "Roboto", sans-serif;
+.titleCard {
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
