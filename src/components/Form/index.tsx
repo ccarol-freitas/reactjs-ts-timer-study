@@ -3,17 +3,24 @@ import { ITask } from "../../types/tasks";
 import Button from "../Button";
 import style from "./Form.module.scss";
 
-const Form = () => {
-  const [name, setName] = useState("");
-  const [time, setTime] = useState("");
-  cosnt[(tasks, setTasks)] = useState([]);
+interface Props {
+  setTasks: React.Dispatch<React.SetStateAction<ITask[]>>;
+}
 
+const Form = ({ setTasks }: Props) => {
+  const [name, setName] = useState("");
+  const [time, setTime] = useState("00:00:00");
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
-    if (name && time) {
-      setTasks({tasks.name, tasks.time})
-      console.log(name, time);
-    }
+    setTasks((oldTasks) => [
+      ...oldTasks,
+      {
+        name,
+        time,
+      },
+    ]);
+    setName("");
+    setTime("00:00:00");
   };
 
   return (
@@ -27,6 +34,7 @@ const Form = () => {
             type='text'
             placeholder='O que gostaria de estudar hoje?'
             required
+            value={name}
             onChange={(e) => {
               setName(e.target.value);
             }}
@@ -42,6 +50,7 @@ const Form = () => {
             max='01:30:00'
             placeholder='Tempo de estudo'
             required
+            value={time}
             onChange={(e) => {
               setTime(e.target.value);
             }}
