@@ -1,20 +1,22 @@
 # reactjs-ts-timer-study
 <p>Timer criado em React.js e Typescript, com o objetivo adicionar tempos de estudo </p>
 
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
-
+<div>
+	<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+	<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+</div>
 
 <h4 align="center"> 
-	🚧  React Timer 🚀 Em construção...  🚧
+	:lock: React Timer - Concluido!  :white_check_mark:
 </h4>
 
 
 ### Features
 
 - [x] Seguir o design https://www.figma.com/file/l02ImWKkzRy7pPzosrv6Td/Timer-Study?node-id=0%3A1
-- [ ] Criar modal
-- [X] Criar botão geenérico
+- [x] Criar tarefa na tela principal
+- [X] Criar botão genérico
+- [X] Ao clicar em começar ele deve iniciar o timer 
 
 
 ### Pré-requisitos
