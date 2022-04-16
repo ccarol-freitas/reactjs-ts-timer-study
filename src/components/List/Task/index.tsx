@@ -25,7 +25,11 @@ const Task = ({ id, name, time, finish, selected, selectTask }: Props): any => {
     >
       <div className={style.taskFlag}>
         <h3>{name}</h3>
-        {finish && <p className={style.flag}>TAREFA CONCLUIDA</p>}
+        {finish && (
+          <div className={style.flag}>
+            <p className={style.textFlag}>TAREFA CONCLUIDA</p>
+          </div>
+        )}
       </div>
 
       <p>{time}</p>
