@@ -1,4 +1,5 @@
 # reactjs-ts-timer-study
+
 <p>Timer criado em React.js e Typescript, com o objetivo adicionar tempos de estudo </p>
 
 <div>
@@ -10,16 +11,15 @@
 	:lock: React Timer - Concluido!  :white_check_mark:
 </h4>
 
-
 ### Features
 
 - [x] Seguir o design https://www.figma.com/file/l02ImWKkzRy7pPzosrv6Td/Timer-Study?node-id=0%3A1
 - [x] Criar tarefa na tela principal
-- [X] Criar botão genérico
-- [X] Ao clicar em começar ele deve iniciar o timer 
-
+- [x] Criar botão genérico
+- [x] Ao clicar em começar ele deve iniciar o timer
 
 ### Pré-requisitos
+
 <p>Precisar ter instalado em sua máquina as seguintes ferramentas:</p>
 
 - [x] [Node.js](https://nodejs.org/en/)
@@ -38,9 +38,9 @@ $ cd reactjs-ts-timer-study
 # Instale as dependências
 $ npm i / npm install
 
-# Execute a aplicação 
+# Execute a aplicação
 $ npm start
 
 # A aplicação inciará na porta:3000 - acesse <http://localhost:3000/> ou na que estiver disponivel em seu computador
+$ localhost:3000
 ```
-
