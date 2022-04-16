@@ -7,7 +7,7 @@
 </div>
 
 <h4 align="center"> 
-	🚧  React Timer 🚀 Em construção...  🚧
+	:lock: React Timer - Concluido!  :white_check_mark:
 </h4>
 
 
